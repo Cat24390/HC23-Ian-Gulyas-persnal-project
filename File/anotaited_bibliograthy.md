@@ -11,7 +11,7 @@ time period to select from.</p>
 <p> this one even more limited than the last one. it dosn't have any era options, nor even half of the factions. 
 what it dose do how ever generates random piolets which is a feature that preivious example dose not.  </p>
 
-#### https://battletech.nl/btforce/index.html
+#### http://www.masterunitlist.info/Home/Index
 
 <p>This a list builder, and while it dose have some randomisation, 
 all that dose its give you a random list of mechs with no rhyme or reason and thus serves more as tool to find new mechs as oposed to generating you a functional army. </p>
