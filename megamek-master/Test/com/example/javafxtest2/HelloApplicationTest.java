@@ -3,7 +3,7 @@ package com.example.javafxtest2;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+//Where the Automatic Testing is done
 class HelloApplicationTest {
     String result;
 

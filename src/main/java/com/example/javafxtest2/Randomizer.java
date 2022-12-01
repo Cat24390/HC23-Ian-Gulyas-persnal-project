@@ -1,5 +1,6 @@
 package com.example.javafxtest2;
-
+//At the moment this is where the options are combined into one string
+// but in the future, this is where the Input file stream, randomisation and selection algorithm will be happening
 
 public class Randomizer{
     private String Faction;
