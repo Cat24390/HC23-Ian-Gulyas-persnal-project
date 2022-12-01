@@ -14,6 +14,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+// This is where the UI is created and set up.
 
 public class HelloApplication extends Application {
     @Override
@@ -27,7 +28,9 @@ public class HelloApplication extends Application {
         generate.setOnAction(e -> {String val = battleValue.getText();
         String fact = String.valueOf(Factions.getValue());
         String age = String.valueOf(Eras.getValue());
-        result_field.setText(fact + " " + val+ " "+ age);
+        Randomizer randomizer = new Randomizer(fact,val,age);
+        String result = randomizer.getResult();
+        result_field.setText(result);
         });
         exit.setOnAction(e -> Platform.exit());
         VBox root = new VBox();
@@ -35,7 +38,7 @@ public class HelloApplication extends Application {
         root.setSpacing(10);
         root.getChildren().addAll(Factions,exit,generate,Eras,battleValue,result_field);
         Scene scene = new Scene(root, 500, 700);
-        stage.setTitle("Hello!");
+        stage.setTitle("Random Force Generator");
         stage.setScene(scene);
         stage.show();
     }
