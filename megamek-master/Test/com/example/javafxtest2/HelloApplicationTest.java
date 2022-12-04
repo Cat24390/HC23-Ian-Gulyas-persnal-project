@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class HelloApplicationTest {
     String result;
     String saveTestData = "Draconis Combine 2000 Succession wars";
+    String saveResult;
 
     @Test
     public void selectOptions()
@@ -23,13 +24,25 @@ class HelloApplicationTest {
     public void saveTest()
     {
         Save.SaveData(saveTestData);
-        File myObj = new File("Save.txt");
+        File myObj = new File("/Users/iangulyas/Desktop/SoftwareDeveloupment/HC23-Ian-Gulyas-Senior-Project/src/main/java/Save.txt");
         try {
             Scanner myReader = new Scanner(myObj);
-            assertEquals(saveTestData,myReader.nextLine());
+            saveResult = myReader.nextLine();
+            assertEquals(saveTestData,saveResult);
+            assertNotEquals("random string",saveResult);
+            myReader.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
+
     }
+
+    @Test
+    public void UITest()
+    {
+
+    }
+
+
 }
