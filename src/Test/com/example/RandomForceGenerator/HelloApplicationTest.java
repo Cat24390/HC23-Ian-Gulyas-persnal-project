@@ -1,10 +1,9 @@
-package com.example.javafxtest2;
+package com.example.RandomForceGenerator;
 
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.geometry.Pos;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -12,7 +11,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.engine.support.hierarchical.Node;
 //import org.testfx.assertions.api.Assertions;
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package com.example.javafxtest2;
+package com.example.RandomForceGenerator;
 
 import javafx.application.Application;
 import javafx.application.Platform;

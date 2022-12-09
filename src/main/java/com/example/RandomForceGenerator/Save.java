@@ -1,4 +1,4 @@
-package com.example.javafxtest2;
+package com.example.RandomForceGenerator;
 
 import java.io.IOException;
 import java.nio.file.Files;

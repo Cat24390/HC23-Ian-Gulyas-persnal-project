@@ -3,6 +3,6 @@ module com.example.javafxtest2 {
     requires javafx.fxml;
 
 
-    opens com.example.javafxtest2 to javafx.fxml;
-    exports com.example.javafxtest2;
+    opens com.example.RandomForceGenerator to javafx.fxml;
+    exports com.example.RandomForceGenerator;
 }

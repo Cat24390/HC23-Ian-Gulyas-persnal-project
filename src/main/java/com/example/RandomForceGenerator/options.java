@@ -1,4 +1,4 @@
-package com.example.javafxtest2;
+package com.example.RandomForceGenerator;
 
 public class options {
     static public int width = 500;

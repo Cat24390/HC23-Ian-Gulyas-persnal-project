@@ -1,4 +1,4 @@
-package javafxtest2;
+package com.example.RandomForceGenerator;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
