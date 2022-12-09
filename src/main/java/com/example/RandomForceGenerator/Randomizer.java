@@ -1,12 +1,22 @@
 package com.example.RandomForceGenerator;
-//At the moment this is where the options are combined into one string
-// but in the future, this is where the Input file stream, randomisation and selection algorithm will be happening
+
+/**
+ * This is the Randomizer class Right now all it does it combine strings but this will be where the algorithm for
+ * selecting the mechs will be.
+ */
 
 public class Randomizer{
     private String Faction;
     private String Era;
     private String battleValue;
     private String Result;
+
+    /**
+     * this is where the afformentioned string combining happens
+     * @param faction
+     * @param battlevalue these parameters are just normal strings
+     * @param era
+     */
     public Randomizer(String faction, String battlevalue, String era){
                 Faction = faction;
                 battleValue=battlevalue;
@@ -14,6 +24,11 @@ public class Randomizer{
                 Result = Faction + " " + battleValue+ " "+ Era;
 
     }
+
+    /**
+     * just a getter nothing much to see
+     * @return
+     */
     public String getResult(){
         return Result;
     }

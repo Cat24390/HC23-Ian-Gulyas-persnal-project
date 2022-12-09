@@ -61,7 +61,7 @@ class HelloApplicationTest {
         @Override
         public void start(Stage stage) {
             VBox UIroot = createAndIntiateUI();
-            Scene Mainscene = new Scene(UIroot, options.width,options.height);
+            Scene Mainscene = new Scene(UIroot, RandomForceGeneratorData.width, RandomForceGeneratorData.height);
             stage.setTitle("Random Force Generator");
             stage.setScene(Mainscene);
             stage.show();
@@ -70,7 +70,7 @@ class HelloApplicationTest {
         private VBox createAndIntiateUI() {
             VBox UIroot = new VBox();
             UIroot.setAlignment(Pos.CENTER);
-            UIroot.setSpacing(options.spacing);
+            UIroot.setSpacing(RandomForceGeneratorData.spacing);
             AddUIelements(UIroot);
             return UIroot;
         }
@@ -84,8 +84,8 @@ class HelloApplicationTest {
         }
 
         private void createChoiceBoxes() {
-            FactionsChoiceBox = new ChoiceBox(FXCollections.observableArrayList(options.fac));
-            ErasChoiceBox = new ChoiceBox(FXCollections.observableArrayList(options.era));
+            FactionsChoiceBox = new ChoiceBox(FXCollections.observableArrayList(RandomForceGeneratorData.factions));
+            ErasChoiceBox = new ChoiceBox(FXCollections.observableArrayList(RandomForceGeneratorData.era));
         }
 
 
