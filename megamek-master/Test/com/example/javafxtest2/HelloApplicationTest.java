@@ -13,13 +13,13 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
 import org.junit.platform.engine.support.hierarchical.Node;
-import org.testfx.assertions.api.Assertions;
+//import org.testfx.assertions.api.Assertions;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.testfx.api.FxAssert.verifyThat;
-import static org.testfx.util.NodeQueryUtils.hasText;
+//import static org.testfx.api.FxAssert.verifyThat;
+//import static org.testfx.util.NodeQueryUtils.hasText;
 
 //Where the Automatic Testing is done
 class HelloApplicationTest {
@@ -92,7 +92,7 @@ class HelloApplicationTest {
             stage.show();
         }
 
-        public void main(String[] args) {
+       /* public void main(String[] args) {
             launch();
         }
         @Test
@@ -103,6 +103,8 @@ class HelloApplicationTest {
             verifyThat(".SaveButton", hasText("Save"));
 
         }
+
+        */
     }
 
 
