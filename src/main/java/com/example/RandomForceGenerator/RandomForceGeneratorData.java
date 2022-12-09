@@ -8,7 +8,7 @@ public class RandomForceGeneratorData {
     static public int width = 500;
     static public int height = 700;
     static public int spacing = 10;
-    static public String factions[] ={"Draconis Combine","Federated Suns","","Outworlds Alliance"};
+    static public String factions[] ={"Draconis Combine","Federated Suns","Free Worlds League","Outworlds Alliance"};
     static public String era[] ={"Third Sucession war","Clan Invasion","Illclan"};
 
 }
