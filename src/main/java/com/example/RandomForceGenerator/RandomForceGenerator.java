@@ -26,7 +26,7 @@ public class RandomForceGenerator extends Application {
     TextField result_field;
     @Override
     /**
-     * This is the real main method,
+     * This methods puts everything to together after getting it created and sets the scene
      */
     public void start(Stage stage) {
         VBox UIroot = createAndInitializeUI();
