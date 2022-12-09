@@ -52,7 +52,7 @@ class HelloApplicationTest {
 
     }
 
-    public class RandomForceGenerator extends Application {
+   /* public class RandomForceGenerator extends ApplicationTest {
         Button ExitButton;
         Button generateButton;
         Button SaveButton;
@@ -60,7 +60,7 @@ class HelloApplicationTest {
         ChoiceBox ErasChoiceBox;
         TextField battleValueField;
         TextField result_field;
-       /* @Override
+       @Override
         public void start(Stage stage) {
             VBox UIroot = createAndIntiateUI();
             Scene Mainscene = new Scene(UIroot, RandomForceGeneratorData.width, RandomForceGeneratorData.height);
@@ -69,7 +69,7 @@ class HelloApplicationTest {
             stage.show();
         }
 
-        */
+
 
         private VBox createAndIntiateUI() {
             VBox UIroot = new VBox();
@@ -131,16 +131,6 @@ class HelloApplicationTest {
             });
         }
 
-        @Override
-        public void start(Stage stage) {
-            VBox UIroot = createAndIntiateUI();
-            Scene Mainscene = new Scene(UIroot, RandomForceGeneratorData.width, RandomForceGeneratorData.height);
-            stage.setTitle("Random Force Generator");
-            stage.setScene(Mainscene);
-            stage.show();
-        }
-
-
         public void main(String[] args) {
             launch();
         }
@@ -159,9 +149,8 @@ class HelloApplicationTest {
             verifyThat(".result_field",hasText(""));
         }
 
-
-
     }
-
+*/
+    public void main(){}
 
 }
