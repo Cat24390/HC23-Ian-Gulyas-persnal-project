@@ -27,7 +27,7 @@ public class Randomizer{
 
     /**
      * just a getter nothing much to see
-     * @return
+     * @return returns the result of the Randomiser class
      */
     public String getResult(){
         return Result;
