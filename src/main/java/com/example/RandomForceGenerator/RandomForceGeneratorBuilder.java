@@ -8,6 +8,11 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
+/**
+ * This is where The Vbox for Random Force Generator is set up as well as all the
+ * buttons, ChoiceBoxes, and Testfeilds are implemented
+ */
+
 public class RandomForceGeneratorBuilder {
     public VBox UIRoot;
     public Button ExitButton;
@@ -42,7 +47,7 @@ public class RandomForceGeneratorBuilder {
      * @param UIroot This methods expects an empty Vbox that has already had the spacing and Alignment set up
      */
 
-    private void AddUIelements(VBox UIroot) {
+    public void AddUIelements(VBox UIroot) {
         createButtons();
         createTextFields();
         createChoiceBoxes();
@@ -54,7 +59,7 @@ public class RandomForceGeneratorBuilder {
      * This method creates and assigns data to the choiceboxes
      */
 
-    private void createChoiceBoxes() {
+    public void createChoiceBoxes() {
         FactionsChoiceBox = new ChoiceBox(FXCollections.observableArrayList(RandomForceGeneratorData.factions));
         ErasChoiceBox = new ChoiceBox(FXCollections.observableArrayList(RandomForceGeneratorData.era));
     }
@@ -63,7 +68,7 @@ public class RandomForceGeneratorBuilder {
      * This method creates the text fields
      */
 
-    private void createTextFields() {
+    public void createTextFields() {
         BattleValueField = new TextField("Enter Battle Value");
         Result_field = new TextField();
     }
@@ -72,7 +77,7 @@ public class RandomForceGeneratorBuilder {
      * This method craetes the buttons and calls the methods to add functionality to them
      */
 
-    private void createButtons() {
+    public void createButtons() {
         ExitButton = new Button("Exit");
         GenerateButton =new Button("Generate Force");
         SaveButton = new Button("Save");
@@ -87,7 +92,7 @@ public class RandomForceGeneratorBuilder {
      *                       would be confusing
      */
 
-    private void createGenerateButton(Button generateButton) {
+    public void createGenerateButton(Button generateButton) {
         generateButton.setOnAction(e -> {String val = BattleValueField.getText();
             String fact = String.valueOf(FactionsChoiceBox.getValue());
             String age = String.valueOf(ErasChoiceBox.getValue());
@@ -102,14 +107,14 @@ public class RandomForceGeneratorBuilder {
      * @param exitButton don't use this for any other button as that would be frustrating
      */
 
-    private void createExitButton(Button exitButton) { exitButton.setOnAction(e -> Platform.exit());}
+    public void createExitButton(Button exitButton) { exitButton.setOnAction(e -> Platform.exit());}
 
     /**
      * this method adds functionality to the save button
      * @param saveButton
      */
 
-    private void createSaveButton(Button saveButton) {
+    public void createSaveButton(Button saveButton) {
         saveButton.setOnAction(e ->
         {
             String val = BattleValueField.getText();
