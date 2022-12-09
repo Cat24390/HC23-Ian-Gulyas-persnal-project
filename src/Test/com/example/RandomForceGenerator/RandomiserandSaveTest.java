@@ -21,7 +21,7 @@ import static org.testfx.api.FxAssert.verifyThat;
 import static org.testfx.util.NodeQueryUtils.hasText;
 
 //Where the Automatic Testing is done
-class HelloApplicationTest {
+class RandomiserandSaveTest {
     String result;
     String saveTestData = "Draconis Combine 2000 Succession wars";
     String saveResult;

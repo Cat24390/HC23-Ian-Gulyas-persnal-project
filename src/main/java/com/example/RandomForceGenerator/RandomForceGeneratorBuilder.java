@@ -9,14 +9,14 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
 public class RandomForceGeneratorBuilder {
-    VBox UIRoot;
-    Button ExitButton;
-    Button GenerateButton;
-    Button SaveButton;
-    ChoiceBox FactionsChoiceBox;
-    ChoiceBox ErasChoiceBox;
-    TextField BattleValueField;
-    TextField Result_field;
+    public VBox UIRoot;
+    public Button ExitButton;
+    public Button GenerateButton;
+    public Button SaveButton;
+    public ChoiceBox FactionsChoiceBox;
+    public ChoiceBox ErasChoiceBox;
+    public TextField BattleValueField;
+    public TextField Result_field;
 
     public RandomForceGeneratorBuilder() {
         UIRoot = createAndInitializeUI();
@@ -29,7 +29,7 @@ public class RandomForceGeneratorBuilder {
      * @return this returns the Vbox after is has been set up and all the elements added to it.
      */
 
-    private VBox createAndInitializeUI() {
+    public VBox createAndInitializeUI() {
         VBox UIRoot = new VBox();
         UIRoot.setAlignment(Pos.CENTER);
         UIRoot.setSpacing(RandomForceGeneratorData.spacing);
