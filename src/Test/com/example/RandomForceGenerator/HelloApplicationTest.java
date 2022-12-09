@@ -11,6 +11,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
+import org.testfx.assertions.api.Assertions;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -58,7 +60,7 @@ class HelloApplicationTest {
         ChoiceBox ErasChoiceBox;
         TextField battleValueField;
         TextField result_field;
-        @Override
+       /* @Override
         public void start(Stage stage) {
             VBox UIroot = createAndIntiateUI();
             Scene Mainscene = new Scene(UIroot, RandomForceGeneratorData.width, RandomForceGeneratorData.height);
@@ -66,6 +68,8 @@ class HelloApplicationTest {
             stage.setScene(Mainscene);
             stage.show();
         }
+
+        */
 
         private VBox createAndIntiateUI() {
             VBox UIroot = new VBox();
@@ -127,23 +131,37 @@ class HelloApplicationTest {
             });
         }
 
+        @Override
+        public void start(Stage stage) {
+            VBox UIroot = createAndIntiateUI();
+            Scene Mainscene = new Scene(UIroot, RandomForceGeneratorData.width, RandomForceGeneratorData.height);
+            stage.setTitle("Random Force Generator");
+            stage.setScene(Mainscene);
+            stage.show();
+        }
+
+
         public void main(String[] args) {
             launch();
         }
-
         @Test
-        public void allUIButtonsAreHere()
-        {
-            verifyThat(".exit", hasText("Exit"));
-            verifyThat(".generate", hasText("Generate Force"));
-            verifyThat(".SaveButton", hasText("Save"));
+        public void allUIButtonsAreHere() {
+            Assertions.assertThat(ExitButton).hasText("Exit");
+            //verifyThat("ExitButton", hasText("Exit"));
+            //verifyThat("generateButton", hasText("Generate Force"));
+            //verifyThat("SaveButton", hasText("Save"));
 
+        }
+        @Test
+        public void textFieldsAreHere()
+        {
+            verifyThat(".battleValueField",hasText("Enter Battle Value"));
+            verifyThat(".result_field",hasText(""));
         }
 
 
+
     }
-
-
 
 
 }
