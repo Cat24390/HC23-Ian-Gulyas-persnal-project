@@ -74,7 +74,7 @@ public class RandomForceGeneratorBuilder {
     }
 
     /**
-     * This method craetes the buttons and calls the methods to add functionality to them
+     * This method creates the buttons and calls the methods to add functionality to them
      */
 
     public void createButtons() {

@@ -1,5 +1,6 @@
 package com.example.RandomForceGenerator;
 import org.junit.Test;
+import org.testfx.api.FxAssert;
 import org.testfx.assertions.api.Assertions;
 import org.testfx.framework.junit.ApplicationTest;
 import javafx.scene.Scene;
@@ -16,6 +17,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.testfx.matcher.control.LabeledMatchers;
 
 import static org.testfx.api.FxAssert.verifyThat;
 import static org.testfx.util.NodeQueryUtils.hasText;
@@ -27,40 +29,37 @@ public class RandomForceGeneratorTest extends ApplicationTest {
         Button ExitButton;
         Button GenerateButton;
         Button SaveButton;
-        Button TestButton;
         ChoiceBox FactionsChoiceBox;
         ChoiceBox ErasChoiceBox;
         TextField BattleValueField;
         TextField Result_field;
+        RandomForceGeneratorBuilder RD;
 
         @Override
         public void start(Stage stage) {
-            RandomForceGeneratorBuilder RD = new RandomForceGeneratorBuilder();
+            RD = new RandomForceGeneratorBuilder();
             VBox UIroot = RD.getUIRoot();
-            Button TestButton = new Button("Test");
-            UIroot.getChildren().addAll(TestButton);
             Scene Mainscene = new Scene(UIroot, RandomForceGeneratorData.width, RandomForceGeneratorData.height);
             stage.setTitle("Random Force Generator");
             stage.setScene(Mainscene);
             stage.show();
+
         }
 
         @Test
         public void allUIButtonsAreHere() {
-            verifyThat(".TestButton",hasText("Test"));
-            //Assertions.assertThat(TestButton).hasText("Test");
-           // Assertions.assertThat(ExitButton).hasText("Exit");
-           // Assertions.assertThat(GenerateButton).hasText("Generate Force");
-           // Assertions.assertThat(SaveButton).hasText("Save");
+            Assertions.assertThat(RD.ExitButton).hasText("Exit");
+            Assertions.assertThat(RD.GenerateButton).hasText("Generate Force");
+            Assertions.assertThat(RD.SaveButton).hasText("Save");
         }
-       /* @Test
+        @Test
         public void textFieldsAreHere()
         {
-            verifyThat(".battleValueField",hasText("Enter Battle Value"));
-            verifyThat(".result_field",hasText(""));
+            Assertions.assertThat(RD.BattleValueField).hasText("Enter Battle Value");
+            Assertions.assertThat(RD.Result_field).hasText("");
         }
 
-        */
+
 
     }
 
