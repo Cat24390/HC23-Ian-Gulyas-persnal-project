@@ -17,13 +17,7 @@ import javafx.stage.Stage;
  */
 
 public class RandomForceGenerator extends Application {
-    Button ExitButton;
-    Button generateButton;
-    Button SaveButton;
-    ChoiceBox FactionsChoiceBox;
-    ChoiceBox ErasChoiceBox;
-    TextField battleValueField;
-    TextField result_field;
+
     @Override
     /**
      * This methods puts everything to together after getting it created and sets the scene

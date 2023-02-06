@@ -1,5 +1,6 @@
 package com.example.RandomForceGenerator;
 
+
 /**
  * This is the Randomizer class Right now all it does it combine strings but this will be where the algorithm for
  * selecting the mechs will be.
