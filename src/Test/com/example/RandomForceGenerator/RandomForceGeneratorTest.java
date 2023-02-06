@@ -25,14 +25,7 @@ import static org.testfx.util.NodeQueryUtils.hasText;
 
 public class RandomForceGeneratorTest extends ApplicationTest {
 
-        VBox UIRoot;
-        Button ExitButton;
-        Button GenerateButton;
-        Button SaveButton;
-        ChoiceBox FactionsChoiceBox;
-        ChoiceBox ErasChoiceBox;
-        TextField BattleValueField;
-        TextField Result_field;
+
         RandomForceGeneratorBuilder RD;
 
         @Override
