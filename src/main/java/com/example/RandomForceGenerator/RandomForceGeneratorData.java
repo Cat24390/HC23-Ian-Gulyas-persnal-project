@@ -9,6 +9,6 @@ public class RandomForceGeneratorData {
     static public int height = 700;
     static public int spacing = 10;
     static public String factions[] ={"Inner Sphere","Clan"};
-    static public String era[] ={"Third Sucession war","Clan Invasion","Illclan"};
+    static public String era[] ={"Starleage","The Succession wars","Clan Invasion","Dark Age","Ilclan"};
 
 }
