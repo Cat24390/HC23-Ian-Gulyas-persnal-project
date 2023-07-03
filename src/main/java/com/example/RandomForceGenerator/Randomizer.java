@@ -23,7 +23,6 @@ public class Randomizer{
                 battleValue=battlevalue;
                 Era = era;
                 Result = Faction + " " + battleValue+ " "+ Era;
-
     }
 
     /**
