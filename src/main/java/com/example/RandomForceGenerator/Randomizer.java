@@ -9,7 +9,7 @@ package com.example.RandomForceGenerator;
 public class Randomizer{
     private String Faction;
     private String Era;
-    private String battleValue;
+    private int battleValue;
     private String Result;
 
     /**
@@ -20,7 +20,7 @@ public class Randomizer{
      */
     public Randomizer(String faction, String battlevalue, String era){
                 Faction = faction;
-                battleValue=battlevalue;
+                battleValue=Integer.parseInt(battlevalue);
                 Era = era;
                 Result = Faction + " " + battleValue+ " "+ Era;
     }

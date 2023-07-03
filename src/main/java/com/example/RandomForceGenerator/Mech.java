@@ -4,9 +4,11 @@ public class Mech {
     static int Battle_value;
     static String Era;
     static String Faction;
-    public Mech(int battle_value, String era, String faction){
+    static String Name;
+    public Mech(int battle_value, String era, String faction,String name){
         Battle_value=battle_value;
-         Era = era;
-         Faction=faction;
+        Era = era;
+        Faction=faction;
+        Name = name;
     }
 }
