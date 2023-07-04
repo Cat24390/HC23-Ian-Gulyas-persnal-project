@@ -21,6 +21,7 @@ public class RandomForceGeneratorBuilder {
     public ChoiceBox FactionsChoiceBox;
     public ChoiceBox ErasChoiceBox;
     public TextField BattleValueField;
+    public TextField YearField;
     public TextField Result_field;
 
     public RandomForceGeneratorBuilder() {
@@ -51,7 +52,7 @@ public class RandomForceGeneratorBuilder {
         createButtons();
         createTextFields();
         createChoiceBoxes();
-        UIroot.getChildren().addAll(FactionsChoiceBox,ErasChoiceBox,BattleValueField,GenerateButton,Result_field,SaveButton,ExitButton);
+        UIroot.getChildren().addAll(FactionsChoiceBox,ErasChoiceBox,YearField,BattleValueField,GenerateButton,Result_field,SaveButton,ExitButton);
 
     }
 
@@ -70,6 +71,7 @@ public class RandomForceGeneratorBuilder {
 
     public void createTextFields() {
         BattleValueField = new TextField("Enter Battle Value");
+        YearField = new TextField("Enter Year");
         Result_field = new TextField();
     }
 
@@ -96,7 +98,8 @@ public class RandomForceGeneratorBuilder {
         generateButton.setOnAction(e -> {String val = BattleValueField.getText();
             String fact = String.valueOf(FactionsChoiceBox.getValue());
             String age = String.valueOf(ErasChoiceBox.getValue());
-            Randomizer randomizer = new Randomizer(fact,val,age);
+            String year = YearField.getText();
+            Randomizer randomizer = new Randomizer(fact,val,age,year);
             String result = randomizer.getResult();
             Result_field.setText(result);
         });
@@ -120,7 +123,8 @@ public class RandomForceGeneratorBuilder {
             String val = BattleValueField.getText();
             String fact = String.valueOf(FactionsChoiceBox.getValue());
             String age = String.valueOf(ErasChoiceBox.getValue());
-            Randomizer randomizer = new Randomizer(fact,val,age);
+            String year = YearField.getText();
+            Randomizer randomizer = new Randomizer(fact,val,age,year);
             String result = randomizer.getResult();
             Save.SaveData(result);
         });

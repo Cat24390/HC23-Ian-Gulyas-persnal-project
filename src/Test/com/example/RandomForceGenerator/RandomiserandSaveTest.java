@@ -29,7 +29,7 @@ class RandomiserandSaveTest {
     @Test
     public void selectOptions()
     {
-       Randomizer randomizer = new Randomizer("Draconis Combine","2000","Succession wars");
+       Randomizer randomizer = new Randomizer("Draconis Combine","2000","Succession wars","2040");
          result = randomizer.getResult();
          assertEquals("Draconis Combine 2000 Succession wars",result);
     }
